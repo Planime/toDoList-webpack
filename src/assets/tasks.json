@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "taskTitle": "Things to buy in market",
+    "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
+  },
+  {
+    "id": "2",
+    "taskTitle": "Things to do today",
+    "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
+  },
+  {
+    "id": "3",
+    "taskTitle": "Watch movie",
+    "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
+  }
+
+]
