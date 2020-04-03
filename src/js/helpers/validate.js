@@ -4,6 +4,13 @@ const regExpDic = {
 };
 
 
+/**
+ * Function validate. Check input on RegExp provided in regExpDic by input data-required type
+ *
+ * @param {HTMLInputElement} el
+ * @returns {Boolean} - return true if input valid or doesn't has attr data-required
+ */
+
 export function validate(el) {
     const regExpName = el.dataset.required;
     if (!regExpDic[regExpName]) return true;
