@@ -1,16 +1,19 @@
 [
   {
     "id": "task-3",
+    "completed": false,
     "taskTitle": "Sell car",
     "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
   },
   {
     "id": "task-2",
+    "completed": false,
     "taskTitle": "Buy new sofa",
     "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
   },
   {
     "id": "task-1",
+    "completed": true,
     "taskTitle": "Watch movie",
     "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
   }

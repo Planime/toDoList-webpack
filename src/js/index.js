@@ -7,9 +7,14 @@ import { createObjOfTasks } from "./helpers/createObjOfTasks";
 import { renderAllTasks, listItemTemplate } from "./views/renderAllTasks";
 import { createNewTask } from "./helpers/createNewTask";
 import { nextTaskId } from "./helpers/nextTaskId";
+import { removeTask } from "./views/removeTask";
+import { setTaskCompleted } from "./views/setTaskCompleted";
 
 const { form, inputTitle, inputBody, taskList:taskContainer } = ui;
 const inputs = [inputTitle, inputBody];
+
+const objOfTasks = createObjOfTasks(tasks);
+
 
 // Events
 form.addEventListener('submit', e => {
@@ -18,12 +23,23 @@ form.addEventListener('submit', e => {
 });
 inputs.forEach(el => el.addEventListener('focus',  () => removeInputError(el) ));
 
+taskContainer.addEventListener('click', (event) => {
+    const target = event.target;
 
-const objOfTasks = createObjOfTasks(tasks);
+    if (target.hasAttribute('data-btn')) removeTask(target);
+
+
+    if (target.hasAttribute('data-done-btn')) {
+        const dataAttr = target.getAttribute('data-done-btn');
+        setTaskCompleted(target, dataAttr)
+    }
+
+
+});
+
+
 
 renderAllTasks(objOfTasks);
-
-console.log(objOfTasks);
 
 
 function onSubmit() {
@@ -38,13 +54,14 @@ function onSubmit() {
 
 
     if (!isValidForm) return;
+    console.log(objOfTasks)
 
     const nextId = nextTaskId(objOfTasks);
-    const newTask = createNewTask(inputTitle.value, inputBody.value, nextId)
+    const newTask = createNewTask(inputTitle.value, inputBody.value, nextId);
     objOfTasks[nextId] = newTask;
 
     const li = listItemTemplate(newTask);
-    taskContainer.insertAdjacentElement("beforebegin", li)
+    taskContainer.insertAdjacentElement("afterbegin", li)
 
     form.reset()
 }

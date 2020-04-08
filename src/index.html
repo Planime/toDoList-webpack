@@ -9,9 +9,11 @@
 <form class="form" name="form">
     <h2 class="form-title">Add New Task</h2>
     <div class="input__wrapper">
+        <div class="error-msg hidden">Task name should be at least 3 charters and A-z and numbers</div>
         <input id="task-title" data-invalid-msg="Task name should be at least 3 charters and A-z and numbers" class="task-title" data-required="title" type="text" placeholder="Task name">
     </div>
     <div class="input__wrapper">
+        <div class="error-msg hidden">Task name should be at least 5 charters and A-z and numbers</div>
         <input id="task-body" data-invalid-msg="Task name should be at least 5 charters and A-z and numbers" class="task-body" data-required="body" type="text" placeholder="Task body">
     </div>
     <input class="submit-btn" type="submit">
@@ -20,6 +22,15 @@
 <ul class="task-list">
 
 </ul>
+
+
+<div class="confirm-container">
+    <div class="confirm-delete">
+        <h2 class="confirm-title">Are you sure?</h2>
+        <button class="confirm-delete-ok">Yes</button>
+        <button class="confirm-delete-cancel">Cancel</button>
+    </div>
+</div>
 
 </body>
 </html>
