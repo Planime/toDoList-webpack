@@ -193,3 +193,25 @@ ul {
 
 }
 
+.tab-container {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff0000;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.tabs:hover {
+    background-color: #00ff00;
+}
+
+.js-active-tab {
+    background-color: #00ff00;
+}
+

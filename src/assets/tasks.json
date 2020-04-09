@@ -2,8 +2,8 @@
   {
     "id": "task-3",
     "completed": false,
-    "taskTitle": "Sell car",
-    "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
+    "taskTitle": "Buy a car",
+    "taskBody": "This isn’t just what my friend is up against; it’s how we all set out to buy a car…with our guard up and feathers out. And because of that, we frequently make several mistakes in the car buying process."
   },
   {
     "id": "task-2",
@@ -13,6 +13,12 @@
   },
   {
     "id": "task-1",
+    "completed": true,
+    "taskTitle": "Watch movie",
+    "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"
+  },
+  {
+    "id": "task-4",
     "completed": true,
     "taskTitle": "Watch movie",
     "taskBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi deleniti eligendi fuga vero? Aspernatur consequatur cupiditate dolor, dolorum fugiat, minus necessitatibus nobis nulla omnis quae quibusdam ratione soluta tempore!"

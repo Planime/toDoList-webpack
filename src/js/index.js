@@ -23,15 +23,19 @@ form.addEventListener('submit', e => {
 });
 inputs.forEach(el => el.addEventListener('focus',  () => removeInputError(el) ));
 
+window.addEventListener('unload', () => {
+    localStorage.setItem("tasks", JSON.stringify(objOfTasks))
+})
+
 taskContainer.addEventListener('click', (event) => {
     const target = event.target;
 
-    if (target.hasAttribute('data-btn')) removeTask(target);
+    if (target.hasAttribute('data-btn')) removeTask(target, objOfTasks);
 
 
     if (target.hasAttribute('data-done-btn')) {
         const dataAttr = target.getAttribute('data-done-btn');
-        setTaskCompleted(target, dataAttr)
+        setTaskCompleted(target, dataAttr, objOfTasks)
     }
 
 

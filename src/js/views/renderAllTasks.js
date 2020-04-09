@@ -14,6 +14,8 @@ export function renderAllTasks(taskList) {
     });
     taskContainer.appendChild(fragment)
 
+
+
 }
 
 export function listItemTemplate({taskTitle, taskBody, id, completed}) {
@@ -51,7 +53,9 @@ export function listItemTemplate({taskTitle, taskBody, id, completed}) {
     li.appendChild(h2);
     li.appendChild(p);
     li.appendChild(deleteBtn);
-    li.appendChild(doneBtn)
+    li.appendChild(doneBtn);
+
+
 
     return li
 }
