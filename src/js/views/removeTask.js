@@ -1,19 +1,24 @@
 import ui from "../config/ui.config.js"
-import {createObjOfTasks} from "../helpers/createObjOfTasks";
 
 const {confirmContainer, confirmOk, confirmCancel} = ui;
 
 
+/**
+ * @description 
+ * @param {HTMLButtonElement} target 
+ * @param {object} objOfTasks 
+ */
 export function removeTask(target, objOfTasks) {
-
-
-    console.log(target.parentElement);
     const parent = target.parentElement;
     const confirmDelete = confirm(parent, objOfTasks);
-
 }
 
-function confirm(parent, objOftasks) {
+/**
+ * @description 
+ * @param {HTMLUListElement} parent 
+ * @param {object} objOftasks 
+ */
+ function confirm(parent, objOftasks) {
     confirmContainer.style.display = "block";
 
     confirmOk.onclick = () => {

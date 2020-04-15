@@ -1,4 +1,12 @@
-
+/**
+ * @description setTaskCompleted 
+ * changing data attribute to done/undone, 
+ * changing <li> color,
+ * changing property "completed" in objectOfTasks
+ * @param {HTMLUListElement} target 
+ * @param {*} attr 
+ * @param {object} objOfTasks 
+ */
 
 export function setTaskCompleted(target, attr, objOfTasks) {
     const parent = target.parentElement;
@@ -21,7 +29,7 @@ export function setTaskCompleted(target, attr, objOfTasks) {
         objOfTasks[taskId]["completed"] = false;
     }
 
-    console.log(objOfTasks)
+
 }
 
 

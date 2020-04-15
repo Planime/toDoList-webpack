@@ -1,7 +1,7 @@
 
 
 /**
-** This function shows input error
+** @description function showInputError shows input error
  * @param {HTMLInputElement} el
 **/
 
@@ -14,6 +14,11 @@ export function showInputError(el) {
     el.classList.add("js-border-error");
 
 }
+
+/**
+** @description function removeInputError removing input error
+ * @param {HTMLInputElement} el
+**/
 
 
 export function removeInputError(el) {

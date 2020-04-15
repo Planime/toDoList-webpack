@@ -2,22 +2,32 @@ import ui from '../config/ui.config'
 
 const {taskList: taskContainer} = ui;
 
+
+/**
+ * @description function renderAllTasks - creating fragment and adding it to task container(<ul>)
+ * @param {object} taskList - object of tasks
+ * 
+ */
 export function renderAllTasks(taskList) {
     if (!taskList) return {};
 
     const fragment = document.createDocumentFragment();
-
 
     Object.values(taskList).forEach(task => {
         const li = listItemTemplate(task);
         fragment.appendChild(li)
     });
     taskContainer.appendChild(fragment)
-
-
-
 }
-
+/**
+ * @description  function listItemTemplate - 
+ * creating HTML element <li> and adding header, body, button to it
+ * @param {string} taskTitle
+ * @param {string} taskBody
+ * @param {string} id
+ * @param {boolean} completed
+ * @return {HTMLUListElement} li
+ */
 export function listItemTemplate({taskTitle, taskBody, id, completed}) {
     const li = document.createElement("li");
     li.className = "task-item";
@@ -49,13 +59,10 @@ export function listItemTemplate({taskTitle, taskBody, id, completed}) {
         doneBtn.textContent = "Done";
     }
 
-
     li.appendChild(h2);
     li.appendChild(p);
     li.appendChild(deleteBtn);
     li.appendChild(doneBtn);
-
-
 
     return li
 }

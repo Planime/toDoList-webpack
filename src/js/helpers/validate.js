@@ -6,9 +6,10 @@ const regExpDic = {
 
 /**
  * Function validate. Check input on RegExp provided in regExpDic by input data-required type
- *
  * @param {HTMLInputElement} el
  * @returns {Boolean} - return true if input valid or doesn't has attr data-required
+ * 
+ * @type {object} regExpDic
  */
 
 export function validate(el) {
